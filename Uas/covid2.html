@@ -1,0 +1,2266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="covid.css">
+
+    <title>Data Covid-19 2020</title>
+
+  </head>
+
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+            crossorigin="anonymous">
+    </script>
+
+    
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top id="mainNav">
+        <nav class="navbar navbar-dark bg-transparant">
+          <a class="navbar-brand" href="index.html">
+            <img src="rw.png"  class="d-inline-block align-top" alt="" loading="lazy">
+          </a>
+        </nav>
+        <button class="navbar-toggler"  style="background-color: dimgray;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: black;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div> 
+
+      <div class="jumbotron jumbotron-fluid text-white">
+        <div class="container text-center">
+          <h1 class="display-4">RevianCovid</h1>
+          <p class="lead">Memberikan data serta berita tentang virus covid-19 yang terjadi di seluruh dunia</p>
+        </div>
+      </div>
+      
+  <div class="container">
+    <h3 style="text-align: center; color: black; margin-top: -10px;">DATA GLOBAL</h3>
+    <div class="row  text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <h5 class="card-header">Terinveksi</h5>
+            <div class="card-body"style="background-image: url(https://tse3.mm.bing.net/th?id=OIP.TXOkRakgb4C9UUXE33q4YwHaFj&pid=Api&P=0&w=241&h=181); background-size: cover;">
+              <h5 class="card-title">Data Terbaru</h5>
+              <h2 id="terinveksi"></h2>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h5 class="card-header">Sembuh</h5>
+            <div class="card-body" style="background-image: url(https://tse4.mm.bing.net/th?id=OIP.N89m2zy1DOx-CIGtSvAKxwHaE8&pid=Api&P=0&w=210&h=141); background-size: cover;">
+              <h5 class="card-title">Data Terbaru</h5>
+              <h2 id="sembuh"></h2>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h5 class="card-header">Meninggal</h5>
+            <div class="card-body"style="background-image: url(https://tse1.mm.bing.net/th?id=OIP.8JcyN63tONf7j5lto1zgogHaEo&pid=Api&P=0&w=278&h=175); background-size: cover;">
+              <h5 class="card-title">Data Terbaru</h5>
+              <h2 id="meninggal"></h2>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+    <div class="row row-cards mt-3">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-14">
+          <div class="card">
+              <div class="card-header ">
+                  <h3 class="card-title">Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h3>
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive service">
+                      <table class="table table-bordered table-hover mb-0 text-nowrap css-serial">
+                          <thead>
+                              <tr>
+                                  <th class="atasbro">No.</th>
+                                  <th class="atasbro">Provinsi</th>
+                                  <th class="atasbro">Positif</th>
+                                  <th class="atasbro">Sembuh</th>
+                                  <th class="atasbro">Meninggal</th>
+                                  
+                              </tr>
+                          </thead>
+                          <tbody>
+                                   
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>DKI Jakarta</td>
+                                  <td>156343</td>
+                                  <td>141271</td>
+                                  <td>2994</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Jawa Timur</td>
+                                  <td>72124</td>
+                                  <td>62277</td>
+                                  <td>5016</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Jawa Barat</td>
+                                  <td>69500</td>
+                                  <td>57289</td>
+                                  <td>1081</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Jawa Tengah</td>
+                                  <td>68681</td>
+                                  <td>46907</td>
+                                  <td>2698</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sulawesi Selatan</td>
+                                  <td>24019</td>
+                                  <td>19792</td>
+                                  <td>537</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kalimantan Timur</td>
+                                  <td>23142</td>
+                                  <td>19570</td>
+                                  <td>653</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Riau</td>
+                                  <td>22762</td>
+                                  <td>20478</td>
+                                  <td>520</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sumatera Barat</td>
+                                  <td>21972</td>
+                                  <td>18739</td>
+                                  <td>454</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sumatera Utara</td>
+                                  <td>16922</td>
+                                  <td>14199</td>
+                                  <td>645</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Bali</td>
+                                  <td>15728</td>
+                                  <td>14386</td>
+                                  <td>470</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Banten</td>
+                                  <td>15452</td>
+                                  <td>9671</td>
+                                  <td>382</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kalimantan Selatan</td>
+                                  <td>14243</td>
+                                  <td>12853</td>
+                                  <td>557</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Papua</td>
+                                  <td>12656</td>
+                                  <td>5840</td>
+                                  <td>142</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sumatera Selatan</td>
+                                  <td>10472</td>
+                                  <td>8622</td>
+                                  <td>569</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Daerah Istimewa Yogyakarta</td>
+                                  <td>8636</td>
+                                  <td>5845</td>
+                                  <td>175</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Aceh</td>
+                                  <td>8546</td>
+                                  <td>6988</td>
+                                  <td>354</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sulawesi Utara</td>
+                                  <td>8289</td>
+                                  <td>6038</td>
+                                  <td>272</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kalimantan Tengah</td>
+                                  <td>8119</td>
+                                  <td>5473</td>
+                                  <td>238</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sulawesi Tenggara</td>
+                                  <td>7336</td>
+                                  <td>6182</td>
+                                  <td>120</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kepulauan Riau</td>
+                                  <td>6386</td>
+                                  <td>5345</td>
+                                  <td>158</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Papua Barat</td>
+                                  <td>5641</td>
+                                  <td>5113</td>
+                                  <td>98</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Maluku</td>
+                                  <td>5149</td>
+                                  <td>3908</td>
+                                  <td>70</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Nusa Tenggara Barat</td>
+                                  <td>5130</td>
+                                  <td>4200</td>
+                                  <td>256</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Lampung</td>
+                                  <td>4927</td>
+                                  <td>3168</td>
+                                  <td>229</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Gorontalo</td>
+                                  <td>3342</td>
+                                  <td>3151</td>
+                                  <td>96</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kalimantan Barat</td>
+                                  <td>2823</td>
+                                  <td>2474</td>
+                                  <td>25</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Jambi</td>
+                                  <td>2775</td>
+                                  <td>1781</td>
+                                  <td>47</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Bengkulu</td>
+                                  <td>2699</td>
+                                  <td>1862</td>
+                                  <td>100</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sulawesi Tengah</td>
+                                  <td>2570</td>
+                                  <td>1574</td>
+                                  <td>89</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Maluku Utara</td>
+                                  <td>2563</td>
+                                  <td>2068</td>
+                                  <td>84</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Kalimantan Utara</td>
+                                  <td>2463</td>
+                                  <td>1429</td>
+                                  <td>33</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Sulawesi Barat</td>
+                                  <td>1617</td>
+                                  <td>1406</td>
+                                  <td>26</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Nusa Tenggara Timur</td>
+                                  <td>1600</td>
+                                  <td>867</td>
+                                  <td>36</td>
+                              
+                              </tr>
+                                  
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td>Bangka Belitung</td>
+                                  <td>1527</td>
+                                  <td>1218</td>
+                                  <td>24</td>
+                              
+                              </tr>
+                                                                                  
+
+                              
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <div class="row row-cards mt-3">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-14">
+        <div class="card">
+          <div class="card-header ">
+            <h3 class="card-title">Kasus Coronavirus Global</h3>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive service">
+              <table class="table table-bordered table-hover mb-0 text-nowrap css-serial">
+                <thead>
+                  <tr>
+                    <th class="atasbro">NO.</th>
+                    <th class="atasbro">Negara</th>
+                    <th class="atasbro">Positif</th>
+                    <th class="atasbro">Sembuh</th>
+                    <th class="atasbro">Meninggal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>US</td>
+                    <td>16,725,039</td>
+                    <td>0</td>
+                    <td>303,867</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>India</td>
+                    <td>9,932,547</td>
+                    <td>9,456,449</td>
+                    <td>144,096</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Brazil</td>
+                    <td>6,970,034</td>
+                    <td>6,206,483</td>
+                    <td>182,799</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Russia</td>
+                    <td>2,708,940</td>
+                    <td>2,155,842</td>
+                    <td>47,994</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>France</td>
+                    <td>2,447,458</td>
+                    <td>184,780</td>
+                    <td>59,182</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Turkey</td>
+                    <td>1,898,447</td>
+                    <td>1,661,191</td>
+                    <td>16,881</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>United Kingdom</td>
+                    <td>1,893,436</td>
+                    <td>4,093</td>
+                    <td>65,006</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Italy</td>
+                    <td>1,870,576</td>
+                    <td>1,141,406</td>
+                    <td>65,857</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Spain</td>
+                    <td>1,762,212</td>
+                    <td>150,376</td>
+                    <td>48,401</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Argentina</td>
+                    <td>1,510,203</td>
+                    <td>1,344,300</td>
+                    <td>41,204</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Colombia</td>
+                    <td>1,444,646</td>
+                    <td>1,328,430</td>
+                    <td>39,356</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Germany</td>
+                    <td>1,391,086</td>
+                    <td>1,031,721</td>
+                    <td>23,595</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mexico</td>
+                    <td>1,267,202</td>
+                    <td>938,089</td>
+                    <td>115,099</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Poland</td>
+                    <td>1,159,901</td>
+                    <td>892,650</td>
+                    <td>23,914</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Iran</td>
+                    <td>1,131,077</td>
+                    <td>844,430</td>
+                    <td>52,883</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Peru</td>
+                    <td>986,130</td>
+                    <td>922,314</td>
+                    <td>36,754</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ukraine</td>
+                    <td>945,218</td>
+                    <td>555,675</td>
+                    <td>16,314</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>South Africa</td>
+                    <td>873,679</td>
+                    <td>764,977</td>
+                    <td>23,661</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Netherlands</td>
+                    <td>638,801</td>
+                    <td>8,077</td>
+                    <td>10,254</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Indonesia</td>
+                    <td>636,154</td>
+                    <td>521,984</td>
+                    <td>19,248</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Belgium</td>
+                    <td>611,422</td>
+                    <td>0</td>
+                    <td>18,178</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Czechia</td>
+                    <td>594,148</td>
+                    <td>518,423</td>
+                    <td>9,882</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Iraq</td>
+                    <td>577,363</td>
+                    <td>511,639</td>
+                    <td>12,614</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Chile</td>
+                    <td>575,329</td>
+                    <td>548,190</td>
+                    <td>15,949</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Romania</td>
+                    <td>571,749</td>
+                    <td>469,499</td>
+                    <td>13,862</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bangladesh</td>
+                    <td>495,841</td>
+                    <td>429,351</td>
+                    <td>7,156</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Canada</td>
+                    <td>479,064</td>
+                    <td>391,435</td>
+                    <td>13,685</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Philippines</td>
+                    <td>452,988</td>
+                    <td>419,282</td>
+                    <td>8,833</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Pakistan</td>
+                    <td>445,977</td>
+                    <td>388,598</td>
+                    <td>9,010</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Morocco</td>
+                    <td>403,619</td>
+                    <td>362,911</td>
+                    <td>6,711</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Switzerland</td>
+                    <td>394,453</td>
+                    <td>311,500</td>
+                    <td>6,316</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Israel</td>
+                    <td>363,287</td>
+                    <td>340,146</td>
+                    <td>3,030</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Saudi Arabia</td>
+                    <td>360,155</td>
+                    <td>350,993</td>
+                    <td>6,069</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Portugal</td>
+                    <td>353,576</td>
+                    <td>280,038</td>
+                    <td>5,733</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Sweden</td>
+                    <td>341,029</td>
+                    <td>0</td>
+                    <td>7,667</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Austria</td>
+                    <td>330,343</td>
+                    <td>291,042</td>
+                    <td>4,764</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Hungary</td>
+                    <td>288,567</td>
+                    <td>83,940</td>
+                    <td>7,381</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Serbia</td>
+                    <td>277,248</td>
+                    <td>0</td>
+                    <td>2,433</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Jordan</td>
+                    <td>265,024</td>
+                    <td>226,245</td>
+                    <td>3,437</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Nepal</td>
+                    <td>250,916</td>
+                    <td>238,569</td>
+                    <td>1,743</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ecuador</td>
+                    <td>202,356</td>
+                    <td>177,951</td>
+                    <td>13,896</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Georgia</td>
+                    <td>198,387</td>
+                    <td>167,281</td>
+                    <td>1,922</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Panama</td>
+                    <td>196,987</td>
+                    <td>164,855</td>
+                    <td>3,411</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>United Arab Emirates</td>
+                    <td>188,545</td>
+                    <td>165,749</td>
+                    <td>626</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Kazakhstan</td>
+                    <td>187,890</td>
+                    <td>159,985</td>
+                    <td>2,613</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Japan</td>
+                    <td>187,673</td>
+                    <td>155,391</td>
+                    <td>2,610</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Azerbaijan</td>
+                    <td>187,336</td>
+                    <td>122,859</td>
+                    <td>2,050</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bulgaria</td>
+                    <td>184,287</td>
+                    <td>87,935</td>
+                    <td>6,005</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Croatia</td>
+                    <td>183,045</td>
+                    <td>157,773</td>
+                    <td>2,870</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Belarus</td>
+                    <td>165,897</td>
+                    <td>143,373</td>
+                    <td>1,291</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Dominican Republic</td>
+                    <td>155,797</td>
+                    <td>121,323</td>
+                    <td>2,367</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Costa Rica</td>
+                    <td>154,096</td>
+                    <td>121,031</td>
+                    <td>1,956</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Armenia</td>
+                    <td>150,218</td>
+                    <td>128,694</td>
+                    <td>2,556</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Lebanon</td>
+                    <td>148,877</td>
+                    <td>104,207</td>
+                    <td>1,223</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bolivia</td>
+                    <td>147,716</td>
+                    <td>126,720</td>
+                    <td>9,026</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Kuwait</td>
+                    <td>146,710</td>
+                    <td>142,599</td>
+                    <td>913</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Qatar</td>
+                    <td>141,272</td>
+                    <td>138,919</td>
+                    <td>241</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Slovakia</td>
+                    <td>139,088</td>
+                    <td>101,584</td>
+                    <td>1,309</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Guatemala</td>
+                    <td>130,082</td>
+                    <td>118,793</td>
+                    <td>4,476</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Moldova</td>
+                    <td>128,656</td>
+                    <td>111,314</td>
+                    <td>2,625</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Oman</td>
+                    <td>126,835</td>
+                    <td>118,736</td>
+                    <td>1,480</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Greece</td>
+                    <td>126,372</td>
+                    <td>23,074</td>
+                    <td>3,785</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Egypt</td>
+                    <td>122,609</td>
+                    <td>105,450</td>
+                    <td>6,966</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ethiopia</td>
+                    <td>117,542</td>
+                    <td>96,307</td>
+                    <td>1,813</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Denmark</td>
+                    <td>116,636</td>
+                    <td>82,623</td>
+                    <td>961</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>West Bank and Gaza</td>
+                    <td>115,606</td>
+                    <td>90,952</td>
+                    <td>1,048</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Honduras</td>
+                    <td>114,943</td>
+                    <td>52,392</td>
+                    <td>3,001</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Tunisia</td>
+                    <td>113,241</td>
+                    <td>86,801</td>
+                    <td>3,956</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Burma</td>
+                    <td>110,667</td>
+                    <td>89,418</td>
+                    <td>2,319</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Venezuela</td>
+                    <td>108,480</td>
+                    <td>103,271</td>
+                    <td>965</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bosnia and Herzegovina</td>
+                    <td>102,330</td>
+                    <td>67,649</td>
+                    <td>3,457</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Slovenia</td>
+                    <td>100,389</td>
+                    <td>77,453</td>
+                    <td>2,190</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Lithuania</td>
+                    <td>99,869</td>
+                    <td>43,379</td>
+                    <td>907</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Paraguay</td>
+                    <td>95,353</td>
+                    <td>67,953</td>
+                    <td>1,991</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>China</td>
+                    <td>94,619</td>
+                    <td>88,305</td>
+                    <td>4,757</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Algeria</td>
+                    <td>93,065</td>
+                    <td>61,307</td>
+                    <td>2,623</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Libya</td>
+                    <td>92,577</td>
+                    <td>62,720</td>
+                    <td>1,324</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Kenya</td>
+                    <td>92,459</td>
+                    <td>73,979</td>
+                    <td>1,604</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bahrain</td>
+                    <td>89,444</td>
+                    <td>87,490</td>
+                    <td>349</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Malaysia</td>
+                    <td>87,913</td>
+                    <td>72,733</td>
+                    <td>429</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Kyrgyzstan</td>
+                    <td>78,151</td>
+                    <td>71,270</td>
+                    <td>1,317</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ireland</td>
+                    <td>76,776</td>
+                    <td>23,364</td>
+                    <td>2,134</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Uzbekistan</td>
+                    <td>75,396</td>
+                    <td>72,661</td>
+                    <td>612</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>North Macedonia</td>
+                    <td>74,732</td>
+                    <td>50,852</td>
+                    <td>2,169</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Nigeria</td>
+                    <td>74,132</td>
+                    <td>66,494</td>
+                    <td>1,200</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Singapore</td>
+                    <td>58,353</td>
+                    <td>58,233</td>
+                    <td>29</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ghana</td>
+                    <td>53,386</td>
+                    <td>52,048</td>
+                    <td>327</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Albania</td>
+                    <td>50,000</td>
+                    <td>25,876</td>
+                    <td>1,028</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Afghanistan</td>
+                    <td>49,161</td>
+                    <td>38,475</td>
+                    <td>2,011</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Kosovo</td>
+                    <td>47,203</td>
+                    <td>34,637</td>
+                    <td>1,220</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Korea, South</td>
+                    <td>45,442</td>
+                    <td>32,947</td>
+                    <td>612</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>El Salvador</td>
+                    <td>42,397</td>
+                    <td>38,481</td>
+                    <td>1,219</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Luxembourg</td>
+                    <td>42,250</td>
+                    <td>33,486</td>
+                    <td>418</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Montenegro</td>
+                    <td>42,148</td>
+                    <td>32,097</td>
+                    <td>597</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Norway</td>
+                    <td>41,852</td>
+                    <td>17,998</td>
+                    <td>395</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Sri Lanka</td>
+                    <td>34,121</td>
+                    <td>25,652</td>
+                    <td>157</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Finland</td>
+                    <td>31,870</td>
+                    <td>20,000</td>
+                    <td>466</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Uganda</td>
+                    <td>28,168</td>
+                    <td>10,005</td>
+                    <td>225</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Australia</td>
+                    <td>28,060</td>
+                    <td>25,690</td>
+                    <td>908</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Latvia</td>
+                    <td>27,495</td>
+                    <td>18,153</td>
+                    <td>382</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cameroon</td>
+                    <td>25,359</td>
+                    <td>23,851</td>
+                    <td>445</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Sudan</td>
+                    <td>21,864</td>
+                    <td>12,667</td>
+                    <td>1,372</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cote d'Ivoire</td>
+                    <td>21,775</td>
+                    <td>21,335</td>
+                    <td>133</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Estonia</td>
+                    <td>19,271</td>
+                    <td>12,117</td>
+                    <td>160</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Zambia</td>
+                    <td>18,428</td>
+                    <td>17,487</td>
+                    <td>368</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Madagascar</td>
+                    <td>17,587</td>
+                    <td>16,992</td>
+                    <td>259</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Senegal</td>
+                    <td>17,336</td>
+                    <td>16,349</td>
+                    <td>352</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mozambique</td>
+                    <td>17,042</td>
+                    <td>15,117</td>
+                    <td>144</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Namibia</td>
+                    <td>16,913</td>
+                    <td>14,981</td>
+                    <td>164</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Angola</td>
+                    <td>16,362</td>
+                    <td>8,990</td>
+                    <td>372</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cyprus</td>
+                    <td>15,789</td>
+                    <td>2,057</td>
+                    <td>84</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Congo (Kinshasa)</td>
+                    <td>14,597</td>
+                    <td>12,773</td>
+                    <td>358</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Guinea</td>
+                    <td>13,474</td>
+                    <td>12,727</td>
+                    <td>80</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Maldives</td>
+                    <td>13,392</td>
+                    <td>12,760</td>
+                    <td>48</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Botswana</td>
+                    <td>12,873</td>
+                    <td>10,456</td>
+                    <td>38</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Tajikistan</td>
+                    <td>12,777</td>
+                    <td>12,212</td>
+                    <td>88</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Jamaica</td>
+                    <td>11,875</td>
+                    <td>8,212</td>
+                    <td>276</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Zimbabwe</td>
+                    <td>11,522</td>
+                    <td>9,599</td>
+                    <td>310</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mauritania</td>
+                    <td>11,431</td>
+                    <td>8,248</td>
+                    <td>236</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Malta</td>
+                    <td>11,415</td>
+                    <td>9,516</td>
+                    <td>180</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cabo Verde</td>
+                    <td>11,395</td>
+                    <td>11,055</td>
+                    <td>110</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Uruguay</td>
+                    <td>10,418</td>
+                    <td>6,895</td>
+                    <td>98</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Haiti</td>
+                    <td>9,597</td>
+                    <td>8,280</td>
+                    <td>234</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cuba</td>
+                    <td>9,588</td>
+                    <td>8,592</td>
+                    <td>137</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Belize</td>
+                    <td>9,511</td>
+                    <td>4,514</td>
+                    <td>211</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Syria</td>
+                    <td>9,452</td>
+                    <td>4,494</td>
+                    <td>543</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Gabon</td>
+                    <td>9,351</td>
+                    <td>9,204</td>
+                    <td>63</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bahamas</td>
+                    <td>7,698</td>
+                    <td>6,081</td>
+                    <td>164</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Andorra</td>
+                    <td>7,382</td>
+                    <td>6,706</td>
+                    <td>79</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Eswatini</td>
+                    <td>6,912</td>
+                    <td>6,476</td>
+                    <td>132</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Trinidad and Tobago</td>
+                    <td>6,900</td>
+                    <td>6,204</td>
+                    <td>123</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Rwanda</td>
+                    <td>6,832</td>
+                    <td>6,036</td>
+                    <td>57</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Congo (Brazzaville)</td>
+                    <td>6,200</td>
+                    <td>4,988</td>
+                    <td>100</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Malawi</td>
+                    <td>6,080</td>
+                    <td>5,659</td>
+                    <td>187</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Guyana</td>
+                    <td>5,973</td>
+                    <td>5,144</td>
+                    <td>156</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Nicaragua</td>
+                    <td>5,887</td>
+                    <td>4,225</td>
+                    <td>162</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mali</td>
+                    <td>5,878</td>
+                    <td>3,697</td>
+                    <td>205</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Djibouti</td>
+                    <td>5,749</td>
+                    <td>5,628</td>
+                    <td>61</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Iceland</td>
+                    <td>5,578</td>
+                    <td>5,421</td>
+                    <td>28</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Suriname</td>
+                    <td>5,381</td>
+                    <td>5,231</td>
+                    <td>117</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Equatorial Guinea</td>
+                    <td>5,195</td>
+                    <td>5,061</td>
+                    <td>85</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Central African Republic</td>
+                    <td>4,936</td>
+                    <td>1,924</td>
+                    <td>63</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Somalia</td>
+                    <td>4,579</td>
+                    <td>3,529</td>
+                    <td>121</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Burkina Faso</td>
+                    <td>4,300</td>
+                    <td>2,940</td>
+                    <td>73</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Thailand</td>
+                    <td>4,261</td>
+                    <td>3,977</td>
+                    <td>60</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Gambia</td>
+                    <td>3,785</td>
+                    <td>3,653</td>
+                    <td>123</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Togo</td>
+                    <td>3,295</td>
+                    <td>2,821</td>
+                    <td>66</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>South Sudan</td>
+                    <td>3,222</td>
+                    <td>3,043</td>
+                    <td>62</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Benin</td>
+                    <td>3,090</td>
+                    <td>2,972</td>
+                    <td>44</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Sierra Leone</td>
+                    <td>2,451</td>
+                    <td>1,853</td>
+                    <td>75</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Guinea-Bissau</td>
+                    <td>2,447</td>
+                    <td>2,378</td>
+                    <td>44</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Niger</td>
+                    <td>2,361</td>
+                    <td>1,329</td>
+                    <td>82</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Lesotho</td>
+                    <td>2,307</td>
+                    <td>1,398</td>
+                    <td>44</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>New Zealand</td>
+                    <td>2,100</td>
+                    <td>2,032</td>
+                    <td>25</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Yemen</td>
+                    <td>2,085</td>
+                    <td>1,384</td>
+                    <td>606</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>San Marino</td>
+                    <td>1,982</td>
+                    <td>1,685</td>
+                    <td>52</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Chad</td>
+                    <td>1,784</td>
+                    <td>1,611</td>
+                    <td>102</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Liberia</td>
+                    <td>1,676</td>
+                    <td>1,358</td>
+                    <td>83</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Liechtenstein</td>
+                    <td>1,600</td>
+                    <td>1,377</td>
+                    <td>21</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Vietnam</td>
+                    <td>1,405</td>
+                    <td>1,252</td>
+                    <td>35</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Sao Tome and Principe</td>
+                    <td>1,010</td>
+                    <td>952</td>
+                    <td>17</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mongolia</td>
+                    <td>918</td>
+                    <td>384</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Taiwan*</td>
+                    <td>749</td>
+                    <td>612</td>
+                    <td>7</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Burundi</td>
+                    <td>735</td>
+                    <td>640</td>
+                    <td>1</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Papua New Guinea</td>
+                    <td>729</td>
+                    <td>601</td>
+                    <td>8</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Diamond Princess</td>
+                    <td>712</td>
+                    <td>699</td>
+                    <td>13</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Eritrea</td>
+                    <td>711</td>
+                    <td>564</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Monaco</td>
+                    <td>678</td>
+                    <td>609</td>
+                    <td>3</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Comoros</td>
+                    <td>633</td>
+                    <td>606</td>
+                    <td>7</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Mauritius</td>
+                    <td>524</td>
+                    <td>489</td>
+                    <td>10</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Tanzania</td>
+                    <td>509</td>
+                    <td>183</td>
+                    <td>21</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Bhutan</td>
+                    <td>439</td>
+                    <td>408</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Cambodia</td>
+                    <td>362</td>
+                    <td>319</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Barbados</td>
+                    <td>297</td>
+                    <td>273</td>
+                    <td>7</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Saint Lucia</td>
+                    <td>278</td>
+                    <td>240</td>
+                    <td>4</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Seychelles</td>
+                    <td>202</td>
+                    <td>184</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Brunei</td>
+                    <td>152</td>
+                    <td>148</td>
+                    <td>3</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Antigua and Barbuda</td>
+                    <td>148</td>
+                    <td>138</td>
+                    <td>5</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Saint Vincent and the Grenadines</td>
+                    <td>98</td>
+                    <td>81</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Dominica</td>
+                    <td>88</td>
+                    <td>83</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Grenada</td>
+                    <td>85</td>
+                    <td>41</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Fiji</td>
+                    <td>46</td>
+                    <td>38</td>
+                    <td>2</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Laos</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Timor-Leste</td>
+                    <td>31</td>
+                    <td>30</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Saint Kitts and Nevis</td>
+                    <td>28</td>
+                    <td>23</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Holy See</td>
+                    <td>27</td>
+                    <td>15</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Solomon Islands</td>
+                    <td>17</td>
+                    <td>5</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>MS Zaandam</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>2</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Marshall Islands</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Samoa</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                  
+                  </tr>
+                    
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Vanuatu</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                  
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<footer class="bg-dark text-white text-center bt-2 pb-2 mt-2">
+  <div class="footercopyright">
+    All right reserved @copyright 2020,<a href="#" title="RevianGroup"> RevianGroup</a>  
+  </div>
+</footer>
+
+<input type="button" value="Scroll Top" id="tombolScrollTop" onclick="scrolltotop()">
+
+    <script src="data/js/circle-progress.min.js" type="text/javascript"></script>
+    <script src="data/plugins/rating/jquery.rating-stars.js" type="text/javascript"></script>
+    <script src="data/plugins/chart/Chart.bundle.js" type="text/javascript"></script>
+    <script src="data/plugins/chart/utils.js" type="text/javascript"></script>
+    <script src="data/js/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="data/plugins/charts-c3/d3.v5.min.js" type="text/javascript"></script>
+    <script src="data/plugins/charts-c3/c3-chart.js" type="text/javascript"></script>
+    <script src="data/plugins/input-mask/jquery.mask.min.js" type="text/javascript"></script>
+    <script src="data/plugins/chart/Chart.bundle.js" type="text/javascript"></script>
+    <script src="data/plugins/chart/utils.js" type="text/javascript"></script>
+    <script src="data/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="data/plugins/horizontal-menu/horizontal-menu.js" type="text/javascript"></script>
+    <script src="data/plugins/peitychart/jquery.peity.min.js" type="text/javascript"></script>
+    <script src="data/plugins/peitychart/peitychart.init.js" type="text/javascript"></script>
+    <script src="data/plugins/morris/morris.js" type="text/javascript"></script>
+    <script src="data/plugins/morris/raphael-min.js" type="text/javascript"></script>
+    <script src="data/plugins/sidebar/sidebar.js" type="text/javascript"></script>
+    <script src="data/js/index54.js" type="text/javascript"></script>
+    <script src="data/js/stiky.js" type="text/javascript"></script>
+    <script src="data/js/custom.js" type="text/javascript"></script>
+
+<script>
+  $(document).ready(function(){
+
+        //memanggil semua data global
+        semuaData();
+
+        //untuk refresh otomatis
+        setInterval(function(){
+          semuaData();
+        }, 3000);
+
+    function semuaData(){
+      $.ajax({
+          url : 'https://coronavirus-19-api.herokuapp.com/all',
+          success : function(data){
+            try{
+                var json = data;
+                var kasus = data.cases;
+                var meninggal = data.deaths;
+                var sembuh = data.recovered;
+
+                $('#terinveksi').html(kasus);
+                $('#sembuh').html(sembuh);
+                $('#meninggal').html(meninggal);
+                
+
+            }catch{
+              alert('Error');
+            }
+          }
+      });
+    }
+  });
+  
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 100) {
+        $('#tombolScrollTop').fadeIn();
+      } else {
+        $('#tombolScrollTop').fadeOut();
+      }
+    });
+  });
+  
+  function scrolltotop()
+  {
+    $('html, body').animate({scrollTop : 0},500);
+  }
+</script>
+
+  </body>
+</html>
